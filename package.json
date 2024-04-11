@@ -1,17 +1,21 @@
 {
   "name": "simplefolio",
   "version": "1.0.1",
+  "homepage": "https://heilonng23.github.io/portfolio",
   "private": "true",
   "description": "A clean, beautiful and responsive portfolio template for Developers!",
   "source": "src/index.html",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "postdeploy": "echo 'Deployment complete!'",
     "start": "parcel",
     "build": "parcel build",
     "gh-pages-build": "parcel build --public-url ."
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cobidev/simplefolio"
+    "url": "https://github.com/Heilonng23/portfolio"
   },
   "keywords": [],
   "author": "Jacobo Martinez",
